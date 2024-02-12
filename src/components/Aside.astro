@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import myAvatarImage from '../assets/images/my-avatar.png'
 import emailLogo from '../assets/aside-logos/email.png'
 import phoneLogo from '../assets/aside-logos/phone.png'
 import mapLogo from '../assets/aside-logos/map.png'
@@ -26,7 +25,7 @@ const content = {
   <div class="sidebar-info">
 
     <figure class="avatar-box">
-      <Image class='avatar-image' src={myAvatarImage} alt={content.title}>
+      <img src='/assets/images/my-avatar.png ' alt='Avatar image'>
     </figure>
 
     <div class="info-content">
@@ -52,7 +51,7 @@ const content = {
       <li class="contact-item">
 
         <div class="icon-box">
-          <Image src={emailLogo} alt='' width={40}></Image>
+          <img src='/assets/aside-logos/email.png' alt='' width={40}></img>
         </div>
 
         <div class="contact-info">
@@ -66,7 +65,7 @@ const content = {
       <li class="contact-item">
 
         <div class="icon-box">
-          <Image src={phoneLogo} alt='' width={35}></Image>
+          <img src='/assets/aside-logos/phone.png' alt='' width={35}></img>
         </div>
 
         <div class="contact-info">
@@ -80,7 +79,7 @@ const content = {
       <li class="contact-item">
 
         <div class="icon-box">
-          <Image src={calendarLogo} alt='' width={35}></Image>
+          <img src='/assets/aside-logos/calendar.png' alt='' width={35}></img>
         </div>
 
         <div class="contact-info">
@@ -94,7 +93,7 @@ const content = {
       <li class="contact-item">
 
         <div class="icon-box">
-          <Image src={mapLogo} alt=''width={35}></Image>
+          <img src='/assets/aside-logos/map.png' alt=''width={35}></img>
         </div>
 
         <div class="contact-info">
@@ -113,31 +112,31 @@ const content = {
 
       <li class="social-item">
         <a href="#" class="social-link">
-          <Image src={facebookLogo} alt='' width={20}></Image>
+          <img src='/assets/social-logos/facebook.png' alt='' width={20}></img>
         </a>
       </li>
 
       <li class="social-item">
         <a href="#" class="social-link">
-          <Image src={twitterLogo} alt='' width={20}></Image>
+          <img src='/assets/social-logos/facebook.png' alt='' width={20}></img>
         </a>
       </li>
 
       <li class="social-item">
         <a href="#" class="social-link">
-          <Image src={instagramLogo} alt='' width={22}></Image>
+          <img src='/assets/social-logos/facebook.png' alt='' width={20}></img>
         </a>
       </li>
 
       <li class="social-item">
         <a href="#" class="social-link">
-          <Image src={githubLogo} alt='' width={18}></Image>
+          <img src='/assets/social-logos/facebook.png' alt='' width={20}></img>
         </a>
       </li>
 
       <li class="social-item">
         <a href="#" class="social-link">
-          <Image src={linkedinLogo} alt='' width={20}></Image>
+          <img src='/assets/social-logos/facebook.png' alt='' width={20}></img>
         </a>
       </li>
 
