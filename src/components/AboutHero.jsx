@@ -1,6 +1,6 @@
 const AboutHero = () => {
   return (
-    <section class="about-text">
+    <section className="about-text">
       <p>
         I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
         I enjoy

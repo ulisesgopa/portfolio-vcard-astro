@@ -70,21 +70,21 @@ const Aside = () => {
   ]
 
   return (
-    <aside class="sidebar" data-sidebar>
+    <aside className="sidebar" data-sidebar>
 
-      <div class="sidebar-info">
+      <div className="sidebar-info">
 
-        <figure class="avatar-box">
+        <figure className="avatar-box">
           <img src='/assets/images/my-avatar.webp' alt='Avatar image'/>
         </figure>
 
-        <div class="info-content">
-          <h1 class="name">{content.title}</h1>
+        <div className="info-content">
+          <h1 className="name">{content.title}</h1>
 
-          <p class="title">{content.description}</p>
+          <p className="title">{content.description}</p>
         </div>
 
-        <button class="info_more-btn" aria-label="Expand information" data-sidebar-btn>
+        <button className="info_more-btn" aria-label="Expand information" data-sidebar-btn>
           <span>Show Contacts</span>
 
           <img src="/assets/icons/arrow-down.webp" width="15px" alt="arrow-down icon"/>
@@ -92,32 +92,32 @@ const Aside = () => {
 
       </div>
 
-      <div class="sidebar-info_more">
+      <div className="sidebar-info_more">
 
-        <div class="separator"></div>
+        <div className="separator"></div>
 
-        <ul class="contacts-list">
+        <ul className="contacts-list">
           {contacts.map((contact) => (
-            <li class="contact-item">
-              <div class="icon-box">
+            <li className="contact-item">
+              <div className="icon-box">
                 <img src={`/assets/aside-logos/${contact.icon}.webp`} alt='' width={30} height={30}/>
               </div>
 
-              <div class="contact-info">
-                <p class="contact-title">{contact.title}</p>
+              <div className="contact-info">
+                <p className="contact-title">{contact.title}</p>
 
-                <a href={contact.link} class="contact-link">{contact.value}</a>
+                <a href={contact.link} className="contact-link">{contact.value}</a>
               </div>
             </li>
             ))}
         </ul>
 
-        <div class="separator"></div>
+        <div className="separator"></div>
 
-        <ul class="social-list">
+        <ul className="social-list">
           {social.map((social) => (
-            <li class="social-item">
-              <a href={social.link} class="social-link">
+            <li className="social-item">
+              <a href={social.link} className="social-link">
                 <img src={`/assets/social-logos/${social.icon}.webp`} alt={social.icon} width={'auto'} height={'auto'}/>
               </a>
             </li>

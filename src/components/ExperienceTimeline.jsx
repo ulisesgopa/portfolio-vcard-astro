@@ -17,23 +17,23 @@ const ExperienceTimeline = () => {
     }
   ]
   return (
-    <section class="timeline">
+    <section className="timeline">
 
-      <div class="title-wrapper">
-        <div class="icon-box">
+      <div className="title-wrapper">
+        <div className="icon-box">
           <img src="/assets/icons/book.webp" width={30} alt=""/>
         </div>
 
-        <h3 class="h3">Experience</h3>
+        <h3 className="h3">Experience</h3>
       </div>
 
-      <ol class="timeline-list">
+      <ol className="timeline-list">
         {
           content.map((content) => (
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">{content.title}</h4>
+            <li className="timeline-item">
+              <h4 className="h4 timeline-item-title">{content.title}</h4>
               <span>{content.date}</span>
-              <p class="timeline-text">{content.description}</p>
+              <p className="timeline-text">{content.description}</p>
             </li>
         ))}
       </ol>

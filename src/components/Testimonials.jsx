@@ -1,5 +1,3 @@
-
-
 const Testimonials = () => {
 
   const items = [
@@ -31,22 +29,22 @@ const Testimonials = () => {
 
   
   return (
-    <section class="testimonials">
+    <section className="testimonials">
 
-    <h3 class="h3 testimonials-title">Testimonials</h3>
+    <h3 className="h3 testimonials-title">Testimonials</h3>
 
-      <ul class="testimonials-list has-scrollbar">
+      <ul className="testimonials-list has-scrollbar">
         { items.map(item => (
-          <li class="testimonials-item">
-            <div class="content-card" data-testimonials-item>
+          <li className="testimonials-item">
+            <div className="content-card" data-testimonials-item>
 
-              <figure class="testimonials-avatar-box">
-                <img src={item.avatar} alt={item.title} width={60} height={60} data-testimonials-avatar/>
+              <figure className="testimonials-avatar-box">
+                <img src={item.avatar} alt={item.title} data-testimonials-avatar/>
               </figure>
 
-              <h4 class="h4 testimonials-item-title" data-testimonials-title>{item.title}</h4>
+              <h4 className="h4 testimonials-item-title" data-testimonials-title>{item.title}</h4>
 
-              <div class="testimonials-text" data-testimonials-text>
+              <div className="testimonials-text" data-testimonials-text>
                 <p>
                   {item.text}
                 </p>

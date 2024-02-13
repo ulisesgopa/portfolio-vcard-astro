@@ -46,29 +46,29 @@ const BlogPosts = () => {
 ];
 
   return (
-    <section class="blog-posts">
-      <ul class="blog-posts-list">
+    <section className="blog-posts">
+      <ul className="blog-posts-list">
         { postItems.map(posts => (
-          <li class="blog-post-item">
+          <li className="blog-post-item">
             <a href="#">
 
-              <figure class="blog-banner-box">
+              <figure className="blog-banner-box">
                 <img src={posts.img} alt={posts.title} loading="lazy"/>
               </figure>
 
-              <div class="blog-content">
+              <div className="blog-content">
 
-                <div class="blog-meta">
-                  <p class="blog-category">{posts.category}</p>
+                <div className="blog-meta">
+                  <p className="blog-category">{posts.category}</p>
 
-                  <span class="dot"></span>
+                  <span className="dot"></span>
 
-                  <time datetime="2022-02-23">{posts.date}</time>
+                  <time datetime={posts.date}>{posts.date}</time>
                 </div>
 
-                <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                <h3 className="h3 blog-item-title">Design conferences in 2022</h3>
 
-                <p class="blog-text">
+                <p className="blog-text">
                   Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
                 </p>
 

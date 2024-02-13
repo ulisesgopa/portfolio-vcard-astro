@@ -19,19 +19,19 @@ const Skills = () => {
   ]
 
   return (
-    <section class="skill">
+    <section className="skill">
 
-      <h3 class="h3 skills-title">My skills</h3>
+      <h3 className="h3 skills-title">My skills</h3>
 
-      <ul class="skills-list content-card">
+      <ul className="skills-list content-card">
         {content.map(item => (
-          <li class="skills-item">
-            <div class="title-wrapper">
-              <h5 class="h5">{item.title}</h5>
+          <li key={item.title} className="skills-item">
+            <div className="title-wrapper">
+              <h5 className="h5">{item.title}</h5>
               <data value={item.value}>{item.value}%</data>
             </div>
-            <div class="skill-progress-bg">
-              <div class="skill-progress-fill" style={{
+            <div className="skill-progress-bg">
+              <div className="skill-progress-fill" style={{
                 width: `${item.value}%`
               }}></div>
             </div>

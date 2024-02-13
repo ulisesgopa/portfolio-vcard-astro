@@ -18,23 +18,23 @@ const EducationTimeline = () => {
   ]
 
   return (
-    <section class="timeline">
+    <section className="timeline">
 
-      <div class="title-wrapper">
-        <div class="icon-box">
+      <div className="title-wrapper">
+        <div className="icon-box">
           <img src="/assets/icons/book.webp" width={30} alt=""/>
         </div>
 
-        <h3 class="h3">Education</h3>
+        <h3 className="h3">Education</h3>
       </div>
 
-      <ol class="timeline-list">
+      <ol className="timeline-list">
         {
           content.map((content) => (
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">{content.title}</h4>
+            <li key={content.title} className="timeline-item">
+              <h4 className="h4 timeline-item-title">{content.title}</h4>
               <span>{content.date}</span>
-              <p class="timeline-text">{content.text}</p>
+              <p className="timeline-text">{content.text}</p>
             </li>
         ))}
       </ol>

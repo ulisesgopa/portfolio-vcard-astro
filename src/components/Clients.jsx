@@ -38,13 +38,13 @@ const Clients = () => {
     }
   ]
   return (
-    <section class="clients">
+    <section className="clients">
 
-      <h3 class="h3 clients-title">Clients</h3>
+      <h3 className="h3 clients-title">Clients</h3>
 
-      <ul class="clients-list has-scrollbar">
+      <ul className="clients-list has-scrollbar">
         { clients.map(client => (
-          <li class="clients-item">
+          <li key={client.id} className="clients-item">
             <a href={client.link}>
               <img src={client.logo} alt="client logo"/>
             </a>

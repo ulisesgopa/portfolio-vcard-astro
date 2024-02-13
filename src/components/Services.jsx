@@ -23,28 +23,28 @@ const Services = () => {
     }
   ]
   return (
-    <section class="service">
-      <h3 class="h3 service-title">What i'm doing</h3>
+    <section className="service">
+      <h3 className="h3 service-title">What i'm doing</h3>
 
-    <ul class="service-list">
-      {serviceItemList.map((item, index) => (
-        <li class="service-item">
-          <div class="service-icon-box">
-            <img src={item.icon} alt={item.title} width={40} height={40}/>
-          </div>
+      <ul className="service-list">
+        {serviceItemList.map((item, index) => (
+          <li key={index} className="service-item">
+            <div className="service-icon-box">
+              <img src={item.icon} alt={item.title} width={40} height={40}/>
+            </div>
 
-          <div class="service-content-box">
-            <h4 class="h4 service-item-title">{item.title}</h4>
+            <div className="service-content-box">
+              <h4 className="h4 service-item-title">{item.title}</h4>
 
-            <p class="service-item-text">
-              {item.text}
-            </p>
-          </div>
-          <div class="service-content-box"></div>
-        </li>
-      ))}
+              <p className="service-item-text">
+                {item.text}
+              </p>
+            </div>
+            <div className="service-content-box"></div>
+          </li>
+        ))}
 
-    </ul>
+      </ul>
 
     </section>
   )

@@ -119,55 +119,55 @@ const Projects = () => {
     author: 'Grace Lee',
   }];  
   return (
-    <section class="projects">
+    <section className="projects">
 
-      <ul class="filter-list">
+      <ul className="filter-list">
 
-        <li class="filter-item">
-          <button class="active" data-filter-btn>All</button>
+        <li className="filter-item">
+          <button className="active" data-filter-btn>All</button>
         </li>
 
-        <li class="filter-item">
+        <li className="filter-item">
           <button data-filter-btn>Web design</button>
         </li>
 
-        <li class="filter-item">
+        <li className="filter-item">
           <button data-filter-btn>Applications</button>
         </li>
 
-        <li class="filter-item">
+        <li className="filter-item">
           <button data-filter-btn>Web development</button>
         </li>
 
       </ul>
 
-      <div class="filter-select-box">
+      <div className="filter-select-box">
 
-        <button class="filter-select" data-select>
+        <button className="filter-select" data-select>
 
-          <div class="select-value" data-selecct-value>Select category</div>
+          <div className="select-value" data-selecct-value>Select category</div>
 
-          <div class="select-icon">
+          <div className="select-icon">
             <img src="/assets/icons/arrow-down.webp" width={15} height={15} alt="arrow-down icon"/>
           </div>
 
         </button>
 
-        <ul class="select-list">
+        <ul className="select-list">
 
-          <li class="select-item">
+          <li className="select-item">
             <button data-select-item>All</button>
           </li>
 
-          <li class="select-item">
+          <li className="select-item">
             <button data-select-item>Web design</button>
           </li>
 
-          <li class="select-item">
+          <li className="select-item">
             <button data-select-item>Applications</button>
           </li>
 
-          <li class="select-item">
+          <li className="select-item">
             <button data-select-item>Web development</button>
           </li>
 
@@ -175,23 +175,23 @@ const Projects = () => {
 
       </div>
 
-      <ul class="project-list">
+      <ul className="project-list">
         {
           content.map(item => (
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li key={item.id} className="project-item  active" data-filter-item data-category="web development">
               <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
+                <figure className="project-img">
+                  <div className="project-item-icon-box">
                     <img src="/assets/icons/eye.webp" alt="eye icon" />
                   </div>
 
                   <img src={item.img} alt="finance" loading="lazy"/>
                 </figure>
 
-                <h3 class="project-title">{item.title}</h3>
+                <h3 className="project-title">{item.title}</h3>
 
-                <p class="project-category">{item.category}</p>
+                <p className="project-category">{item.category}</p>
 
               </a>
             </li>
