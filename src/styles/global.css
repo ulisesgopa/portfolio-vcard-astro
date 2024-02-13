@@ -395,6 +395,10 @@ main {
 .info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
 
 .info_more-btn span { display: none; }
+.info_more-btn img {
+  width: 15px;
+  height: 15px;
+}
 
 .sidebar-info_more {
   opacity: 0;
@@ -919,6 +923,11 @@ main {
 }
 
 .filter-select.active .select-icon { transform: rotate(0.5turn); }
+
+.select-icon img{
+  width: 15px;
+  height: 15px;
+}
 
 .select-list {
   background: var(--eerie-black-2);

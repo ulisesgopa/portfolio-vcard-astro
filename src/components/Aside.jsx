@@ -87,7 +87,7 @@ const Aside = () => {
         <button className="info_more-btn" aria-label="Expand information" data-sidebar-btn>
           <span>Show Contacts</span>
 
-          <img src="/assets/icons/arrow-down.webp" width="15px" alt="arrow-down icon"/>
+          <img src="/assets/icons/arrow-down.webp" alt="arrow-down icon"/>
         </button>
 
       </div>
