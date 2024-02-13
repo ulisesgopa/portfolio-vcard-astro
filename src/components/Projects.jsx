@@ -148,7 +148,7 @@ const Projects = () => {
           <div class="select-value" data-selecct-value>Select category</div>
 
           <div class="select-icon">
-            <img src="/assets/icons/arrow-down.webp" width={20} alt="arrow-down icon"/>
+            <img src="/assets/icons/arrow-down.webp" width={15} height={15} alt="arrow-down icon"/>
           </div>
 
         </button>

@@ -39,31 +39,31 @@ const Aside = () => {
   const social = [
     {
       icon: 'facebook',
-      link: '#',
+      link: 'https://facebook.com',
       title: 'Facebook',
       value: 'facebook.com',
     },
     {
       icon: 'twitter',
-      link: '#',
+      link: 'https://twitter.com',
       title: 'Twitter',
       value: 'twitter.com',
     },
     {
       icon: 'instagram',
-      link: '#',
+      link: 'https://instagram.com',
       title: 'Instagram',
       value: 'instagram.com',
     },
     {
       icon: 'linkedin',
-      link: '#',
+      link: 'https://linkedin.com',
       title: 'LinkedIn',
       value: 'linkedin.com',
     },
     {
       icon: 'github',
-      link: '#',
+      link: 'https://github.com',
       title: 'GitHub',
       value: 'github.com'
     },
