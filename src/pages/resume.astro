@@ -1,9 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Experience from '../components/ExperiencePage.astro';
+import ResumeHeader from '../components/ResumeHeader'
+import EducationTimeline from '../components/EducationTimeline'
+import ExperienceTimeline from '../components/ExperienceTimeline'
+import Skills from '../components/Skills'
 ---
 
 <Layout title="Resume Portfolio Vcard">
-	<Experience/>
+	<article class="about  active" data-page="about">
+		<ResumeHeader/>
+		<EducationTimeline/>
+		<ExperienceTimeline/>
+		<Skills/>
+	</article>
 </Layout>
 
