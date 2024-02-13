@@ -30,7 +30,7 @@ const Services = () => {
       {serviceItemList.map((item, index) => (
         <li class="service-item">
           <div class="service-icon-box">
-            <img src={item.icon} alt={item.title} width="40"/>
+            <img src={item.icon} alt={item.title} width={40} height={40}/>
           </div>
 
           <div class="service-content-box">

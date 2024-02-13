@@ -41,7 +41,7 @@ const Testimonials = () => {
             <div class="content-card" data-testimonials-item>
 
               <figure class="testimonials-avatar-box">
-                <img class='testimonials-avatar-img' src={item.avatar} alt={item.title} data-testimonials-avatar/>
+                <img src={item.avatar} alt={item.title} width={60} height={60} data-testimonials-avatar/>
               </figure>
 
               <h4 class="h4 testimonials-item-title" data-testimonials-title>{item.title}</h4>

@@ -609,9 +609,9 @@ main {
   box-shadow: var(--shadow-1);
 }
 
-.testimonials-avatar-img{
+.testimonials-avatar img{
   width: 60px;
-  height: auto;
+  height: 60px;
 }
 
 .testimonials-item-title { margin-bottom: 7px; }

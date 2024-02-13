@@ -75,7 +75,7 @@ const Aside = () => {
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src='/assets/images/my-avatar.webp ' alt='Avatar image'/>
+          <img src='/assets/images/my-avatar.webp' alt='Avatar image'/>
         </figure>
 
         <div class="info-content">
@@ -100,7 +100,7 @@ const Aside = () => {
           {contacts.map((contact) => (
             <li class="contact-item">
               <div class="icon-box">
-                <img src={`/assets/aside-logos/${contact.icon}.webp`} alt='' width={30}/>
+                <img src={`/assets/aside-logos/${contact.icon}.webp`} alt='' width={30} height={30}/>
               </div>
 
               <div class="contact-info">
@@ -118,7 +118,7 @@ const Aside = () => {
           {social.map((social) => (
             <li class="social-item">
               <a href={social.link} class="social-link">
-                <img src={`/assets/social-logos/${social.icon}.webp`} alt='' width={'auto'} height={'auto'}/>
+                <img src={`/assets/social-logos/${social.icon}.webp`} alt={social.icon} width={'auto'} height={'auto'}/>
               </a>
             </li>
           ))}
