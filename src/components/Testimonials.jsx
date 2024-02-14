@@ -1,4 +1,8 @@
+import Modal from "./Modal"
+
+
 const Testimonials = () => {
+
 
   const items = [
     {
@@ -29,34 +33,38 @@ const Testimonials = () => {
 
   
   return (
-    <section className="testimonials">
+    <>
+      <section className="testimonials">
 
-    <h3 className="h3 testimonials-title">Testimonials</h3>
+      <h3 className="h3 testimonials-title">Testimonials</h3>
 
-      <ul className="testimonials-list has-scrollbar">
-        { items.map(item => (
-          <li className="testimonials-item">
-            <div className="content-card" data-testimonials-item>
+        <ul className="testimonials-list has-scrollbar">
+          { items.map(item => (
+            <li key={item.id} className="testimonials-item">
+              <div className="content-card" data-testimonials-item>
 
-              <figure className="testimonials-avatar-box">
-                <img src={item.avatar} alt={item.title} data-testimonials-avatar/>
-              </figure>
+                <figure className="testimonials-avatar-box">
+                  <img src={item.avatar} alt={item.title} data-testimonials-avatar/>
+                </figure>
 
-              <h4 className="h4 testimonials-item-title" data-testimonials-title>{item.title}</h4>
+                <h4 className="h4 testimonials-item-title" data-testimonials-title>{item.title}</h4>
 
-              <div className="testimonials-text" data-testimonials-text>
-                <p>
-                  {item.text}
-                </p>
+                <div className="testimonials-text" data-testimonials-text>
+                  <p>
+                    {item.text}
+                  </p>
+                </div>
+
               </div>
+            </li>
+          ))}
 
-            </div>
-          </li>
-        ))}
+        </ul>
 
-      </ul>
+      </section>
 
-    </section>
+      <Modal/>
+    </>
   )
 }
 
